@@ -1,4 +1,4 @@
-server:
+﻿server:
   port: 8080
 
 guns:
@@ -39,7 +39,7 @@ spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     username: root
-    password: root
+    password: 
     db-name: guns #用来搜集数据库的所有表
     filters: wall,mergeStat
 
@@ -47,9 +47,9 @@ spring:
 guns:
   muti-datasource:
     open: false
-    url: jdbc:mysql://127.0.0.1:3306/guns_test?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     username: root
-    password: root
+    password: 
     dataSourceNames:
       - dataSourceGuns
       - dataSourceBiz
@@ -61,7 +61,7 @@ spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     username: root
-    password: root
+    password: 
     db-name: guns #用来搜集数据库的所有表
     filters: wall,mergeStat
 
@@ -72,7 +72,7 @@ spring:
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
     username: root
-    password: root
+    password: 
     filters: wall,mergeStat
 
 ---
@@ -82,6 +82,6 @@ spring:
   datasource:
       url: jdbc:mysql://127.0.0.1:3306/guns?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=UTC
       username: root
-      password: root
+      password: 
       filters: wall,mergeStat
 
